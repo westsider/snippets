@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>returncloseskeyboard</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Keyboard behavior functions - close keyboard with return
+func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool {
+        userNameInput.resignFirstResponder()
+        return true
+        //  Requires:
+        //  self.userNameInput.delegate = self in ViewDidLoad
+        //  add to class UITextFieldDelegate
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>77B7B05D-2DFD-4B63-80EE-41E618975584</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>return closes keyboard</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

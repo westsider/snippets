@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>forloop</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - my favorite loops
+        let array = ["one", "Two", "Three"]
+        
+        for element in array { print(element) }
+        
+        let data = [1,2,3,4,5]
+        
+        for (index, row ) in data.enumerated() { print("index = \(index) data = \(row)")}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>823AD101-7989-4C09-8DD8-5DE4890B545F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>index, row</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Loops - favorite</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

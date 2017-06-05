@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>closekeyboard</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Keyboard behavior functions - close keyboard with click away from text input 
+    override func touchesBegan(_ touches: Set&lt;UITouch&gt;, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BECA20A7-B9FC-4C9D-8921-5A9C171A155B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>close keyboard with click away from text input </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>close keyboard with click away</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
