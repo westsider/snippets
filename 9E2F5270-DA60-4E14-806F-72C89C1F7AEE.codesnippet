@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>moveUpKeyboard</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// required delegated UIViewController, UITextFieldDelegate
+    
+    @IBOutlet weak var topImage: UIImageView!
+    
+    @IBOutlet weak var textInput: UITextField!
+    
+    @IBOutlet weak var constraintTextStackBottom: NSLayoutConstraint!
+    
+    var constraintInitially: CGFloat?
+    
+    /*
+     override func viewDidLoad() {
+     super.viewDidLoad()
+     textInput.delegate = self
+     constraintInitially = self.constraintTextStackBottom.constant
+     setupViewResizerOnKeyboardShown()
+     }
+     */
+
+    // set up return and tap to hide keyboard
+    override func touchesBegan(_ touches: Set&lt;UITouch&gt;, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -&gt; Bool {
+        textInput.resignFirstResponder()
+        return true
+    }
+    
+    // set up keyboard notifications
+    func setupViewResizerOnKeyboardShown() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(ViewController.keyboardWillShowForResizing),
+                                               name: Notification.Name.UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(ViewController.keyboardWillHideForResizing),
+                                               name: Notification.Name.UIKeyboardWillHide,
+                                               object: nil)
+    }
+    
+    func keyboardWillHideForResizing(notification: Notification) {
+        keyBoardMove(moveUp: false)
+    }
+    
+    func keyboardWillShowForResizing(notification: Notification) {
+        keyBoardMove(moveUp: true)
+    }
+    
+    // animate the keyboard move and fade the image
+    func keyBoardMove (moveUp: Bool) -&gt; Void {
+        
+        var alpha: CGFloat
+        var constraint: CGFloat
+        print ( "KEYBOARD UP:  \(moveUp) "    )
+        if moveUp {
+            alpha = 0.3
+            constraint = self.constraintInitially! + 180}
+        else {
+            alpha = 1.0
+            constraint =  self.constraintInitially!
+        }
+        let animInterval = 3.0
+        print ("ALPHA: \(alpha)   CONSTRAIN: \(constraint)  ANIM:  \(animInterval)" )
+        UIView.animate (withDuration: animInterval,
+                        delay: 0.2,
+                        options: .curveEaseIn,
+                        animations: { () -&gt; Void in
+                            self.topImage.alpha = alpha
+                            self.constraintTextStackBottom.constant = constraint
+                            self.view.layoutIfNeeded()
+        },
+                        completion: nil )
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9E2F5270-DA60-4E14-806F-72C89C1F7AEE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Move keyboard Up</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

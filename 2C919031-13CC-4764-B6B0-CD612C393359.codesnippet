@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>indexoutofrange</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> // check for array out of range error
+        
+        // boolean
+        let array =  ["A", "String", "In", "Here"]
+        
+        let index = 3
+        
+        let isIndexValid = array.indices.contains(index)
+        
+        // ternary
+        var str2 = array.count &gt; index ? array[index] : "Index out of range"
+        
+        // if else
+        if array.indices.contains(index) { print("we are good on index")
+        } else { print("We are bad") }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2C919031-13CC-4764-B6B0-CD612C393359</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Index out of range error</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

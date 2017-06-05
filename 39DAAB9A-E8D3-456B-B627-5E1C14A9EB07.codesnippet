@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>navicationControllerembed</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/*  how to use navigation controller
+         Select main View Controller
+         Editor &gt; Embed In &gt; Navigation Controller
+         Add Second View Controller, Add Class
+         BEFORE YOU ADD ANYTHING TO THE NEW VC: Manual Segue to second view controller- Kind: Show (e.g. push)
+         Click on nav bar on main to set custom title and back button   */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>39DAAB9A-E8D3-456B-B627-5E1C14A9EB07</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>embed process</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Navigation Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

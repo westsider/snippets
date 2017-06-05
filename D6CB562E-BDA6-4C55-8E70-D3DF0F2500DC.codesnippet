@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>alertviewcontroller</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func callAlertVC(title: String, body: String) {
+        
+        let alertController : UIAlertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
+        
+        let action_cancel = UIAlertAction.init(title: "OK", style: .default) { (UIAlertAction) -&gt; Void in }
+        
+        alertController.addAction(action_cancel)
+        
+        present(alertController, animated: true, completion: nil)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D6CB562E-BDA6-4C55-8E70-D3DF0F2500DC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>alert controller with "OK"</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Alert VC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

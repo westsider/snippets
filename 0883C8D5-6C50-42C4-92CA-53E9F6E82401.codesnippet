@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>classinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class Starship {
+    
+    var prefix: String?
+    
+    var name: String
+    
+    init(name: String, prefix: String? = nil)
+    {
+        self.name = name
+        self.prefix = prefix
+    }
+    
+    var fullName: String {
+        return (prefix != nil ? prefix! + " " : "") + name
+    }
+    
+    func identify() {
+        print(fullName)
+    }
+}
+
+var ncc1701 = Starship(name: "Enterprise", prefix: "USS")
+
+let fullname =  ncc1701.fullName //"USS Enterprise"
+
+let id = ncc1701.identify()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0883C8D5-6C50-42C4-92CA-53E9F6E82401</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift class with func</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Class Init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

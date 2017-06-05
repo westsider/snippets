@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>githubsetup</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> /*      
+     
+     Github set up
+        1. Create repository with space in name,  NO README, copy link
+        2. Config, remotes. +, add remote no spaces in name, commit, push
+    
+     Add images to git readme
+        Issues &gt; new issue &gt; drop in an image &gt; copy the link &gt; paste into my readme
+     
+     Github Markup  for commits
+        type: subject
+        body
+        Footer
+     
+        feat: a new feature
+        fix: a bug fix
+        docs: changes to documentation
+        style: formatting, missing semi colons, etc; no code change
+        refactor: refactoring production code
+        test: adding tests, refactoring test; no production code change    
+        chore: updating build tasks, package manager configs, etc; no production code change    */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BC9A093E-611A-417A-993B-F7C926DB8A46</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Github Set Up</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>getWeatherTask</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+import PlaygroundSupport
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+let url = NSURL(string:"https://api.wunderground.com/api/f6373e95fa296c84/conditions/q/CA/San_Francisco.json")
+
+let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
+    print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue) as Any)
+}
+
+task.resume()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BD98F323-9C18-4638-928C-45D8BBB343BD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Weather Task</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

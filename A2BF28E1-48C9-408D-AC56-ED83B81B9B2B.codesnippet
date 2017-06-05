@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sharemail</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //MARK: - Share
+    func shareAction() {
+        
+        // requires import MessageUI
+        
+        let messageText = "This is the message body"
+        
+        let activityVC = UIActivityViewController(activityItems: [messageText], applicationActivities: nil)
+        
+        activityVC.setValue("Portfolio Update", forKey: "Subject")
+        
+        // exclude sms from sharing with images
+        activityVC.excludedActivityTypes = [ UIActivityType.message ]
+        
+        self.present(activityVC, animated: true, completion: nil)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2BF28E1-48C9-408D-AC56-ED83B81B9B2B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>sms mail ect</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Share Action</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

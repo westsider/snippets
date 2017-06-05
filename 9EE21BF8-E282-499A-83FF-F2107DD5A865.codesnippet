@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>nsuserdefaultsFirstRun</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        // check nsuserdefaults if 1st run
+        if  UserDefaults.standard.object(forKey: "FirstRun") == nil {
+            
+            print("\nThis was first run.\n")
+            
+            // update nsuserdefaults
+            UserDefaults.standard.set(false, forKey: "FirstRun")
+        }
+
+        // later update nsuserdefaults with filename
+        //  UserDefaults.standard.set("Latest File Name", forKey: "FileName")</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9EE21BF8-E282-499A-83FF-F2107DD5A865</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSUserDefaults First Run Check</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

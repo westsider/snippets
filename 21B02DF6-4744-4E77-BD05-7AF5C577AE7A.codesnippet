@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pickerviewfunctions</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // required -  delegates UIPickerViewDelegate, UIPickerViewDataSource
+    
+    let items = ["One", "Two", "Three"]
+    
+    // MARK: - Picker delegates and controls
+    public func numberOfComponents(in pickerView: UIPickerView) -&gt; Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    public func pickerView(_ pickerView: UIPickerView,
+                           numberOfRowsInComponent component: Int) -&gt; Int {
+        return items.count
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    public func pickerView(_ pickerView: UIPickerView,
+                           titleForRow row: Int,
+                           forComponent component: Int) -&gt; String? {
+        return items[row]
+    }
+    
+    //  when a row gets selected
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // Do something with the row
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>21B02DF6-4744-4E77-BD05-7AF5C577AE7A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Picker View Functions</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

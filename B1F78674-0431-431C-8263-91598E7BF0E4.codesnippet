@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>realmTypesAvailable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> /*
+     Realm Types
+     String, NSString
+     Int
+     Int8, Int16, Int32, Int64
+     Float
+     Double
+     Bool
+     Date, NSDate
+     Data, NSData
+     RealmOptional&lt;T&gt; for optional numeric properties
+     Object subclasses, to model many-to-one relationships
+     List&lt;T&gt;, to model many-to-many relationships   */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B1F78674-0431-431C-8263-91598E7BF0E4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>all types available in realm</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Realm Types</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
